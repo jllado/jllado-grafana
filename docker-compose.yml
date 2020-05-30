@@ -1,0 +1,9 @@
+version: '3'
+services:
+  prometheus:
+    image: grafana/grafana:7.0.1
+    container_name: grafana
+    volumes:
+      - /opt/servers/grafana/data:/var/lib/grafana
+    ports:
+      - "3000:3000"
